@@ -13,6 +13,10 @@ class Search extends Component {
     images: [],
   };
 
+  onTextChange=(e)=>{
+this.setState({[e.target.name]:e.target.value})
+  }
+
   render() {
     return (
       <div>
