@@ -1,11 +1,6 @@
 import React from 'react';
+import AppBar from 'material-ui/AppBar'
 
-function Navbar(){
-    return(
-        <div>
-            Hai there
-        </div>
-    )
-}
+const Navbar=()=><AppBar title="Pixebay image finder"/>
 
 export default Navbar;
