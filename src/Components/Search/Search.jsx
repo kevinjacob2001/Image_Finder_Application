@@ -41,13 +41,13 @@ this.setState({images:[]})
           name="searchText"
           value={this.state.searchText}
           onChange={this.onTextChange}
-          floatingLabelText="Search For Images"
+          floatingLabelText="Search for images"
           fullWidth={true}
         />
         <br />
         <SelectField
           name="amount"
-          floatingLabelText="Amount"
+          floatingLabelText="Number of images:"
           value={this.state.amount}
           onChange={this.onAmountChange}
         >
