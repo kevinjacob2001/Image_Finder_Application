@@ -37,7 +37,7 @@ this.setState({images:[]})
   render() {
 
     return (
-      <div >
+      <div style={{padding:"30px"}} >
         <TextField
           name="searchText"
           floatingLabelStyle={{color: "white",fontSize:"25px" }}
@@ -56,7 +56,7 @@ this.setState({images:[]})
           onChange={this.onAmountChange}
         >
        
-          <MenuItem value={5} color="primary" />
+          <MenuItem value={5} primaryText="5" />
           <MenuItem value={10} primaryText="10" />
           <MenuItem value={15} primaryText="15" />
           <MenuItem value={30} primaryText="30" />
