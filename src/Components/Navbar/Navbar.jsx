@@ -4,7 +4,7 @@ import App from '../../App';
 
 function Navbar(){
     return(
-<AppBar title="PixaBay Image Finder"/>
+<AppBar style={{background:"#324ea8"}} title="PixaBay Image Finder"/>
     )
 }
 

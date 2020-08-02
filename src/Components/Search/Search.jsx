@@ -40,26 +40,28 @@ this.setState({images:[]})
       <div >
         <TextField
           name="searchText"
-          floatingLabelStyle={{color: "white" }}
+          floatingLabelStyle={{color: "white",fontSize:"25px" }}
           value={this.state.searchText}
           onChange={this.onTextChange}
-          floatingLabelText="Search For Images"
+          floatingLabelText="Search for the images!"
           fullWidth={true}
         />
         <br />
         <SelectField
           name="amount"
-          floatingLabelStyle={{color: "white" }}
+          floatingLabelStyle={{color: "white",fontSize:"20px" }}
           floatingLabelText="No of images per page:"
           
           value={this.state.amount}
           onChange={this.onAmountChange}
         >
-          <MenuItem value={5}   primaryText="5" />
+       
+          <MenuItem value={5} color="primary" />
           <MenuItem value={10} primaryText="10" />
           <MenuItem value={15} primaryText="15" />
           <MenuItem value={30} primaryText="30" />
           <MenuItem value={50} primaryText="50" />
+
         </SelectField>
         <br />
         {this.state.images.length > 0 ? (
