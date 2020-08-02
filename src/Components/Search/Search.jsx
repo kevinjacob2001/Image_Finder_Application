@@ -16,11 +16,17 @@ class Search extends Component {
   };
 
   onTextChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value }, async () => {
-      const response = await fetch(`${this.state.apiUrl}/?key=${this.state.apiKey}&q=${this.state.searchText}&image_type=photo&
+    const val=e.target.value;
+    this.setState({ [e.target.name]: val}, async () => {
+      if(val===""){
+this.setState({images:[]})
+      }
+      else{
+        const response = await fetch(`${this.state.apiUrl}/?key=${this.state.apiKey}&q=${this.state.searchText}&image_type=photo&
         per_page=${this.state.amount}&safesearch=true`);
       const data = await response.json();
       this.setState({ images: data.hits });
+      }
     });
   };
 
