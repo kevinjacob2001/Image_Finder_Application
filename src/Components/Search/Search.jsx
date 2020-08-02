@@ -31,23 +31,26 @@ this.setState({images:[]})
     });
   };
 
-  onAmountChange = (value) => this.setState({ amount: value });
+
+  onAmountChange = (e, index, value) => this.setState({ amount: value });
 
   render() {
-    console.log(this.state.images);
+    
     return (
-      <div>
+      <div >
         <TextField
           name="searchText"
           value={this.state.searchText}
           onChange={this.onTextChange}
-          floatingLabelText="Search for images"
+          floatingLabelText="Search For Images"
           fullWidth={true}
         />
         <br />
         <SelectField
           name="amount"
-          floatingLabelText="Number of images:"
+          
+          floatingLabelText="No of images per page:"
+          
           value={this.state.amount}
           onChange={this.onAmountChange}
         >
