@@ -8,7 +8,6 @@ import Dialog from "material-ui/Dialog";
 import FlatButton from "material-ui/FlatButton";
 import GridTile from "material-ui/GridList/GridTile";
 
-
 class ImageResult extends Component {
   state = {
     open: false,
@@ -39,7 +38,7 @@ class ImageResult extends Component {
                 </span>
               }
               actionIcon={
-                <IconButton onClick={()=>this.handleOpen(img.largeImageURL)}>
+                <IconButton onClick={() => this.handleOpen(img.largeImageURL)}>
                   <ZoomIn color="white" />
                 </IconButton>
               }
