@@ -63,6 +63,9 @@ this.setState({images:[]})
           <MenuItem value={15} primaryText="15" />
           <MenuItem value={30} primaryText="30" />
           <MenuItem value={50} primaryText="50" />
+          <MenuItem value={100} primaryText="100" />
+          <MenuItem value={150} primaryText="150" />
+          <MenuItem value={200} primaryText="200" />
 
         </SelectField>
         <br />
