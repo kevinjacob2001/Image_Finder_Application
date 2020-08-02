@@ -3,23 +3,23 @@ import { Component } from "react";
 import PropTypes from "prop-types";
 import { GridList, GridTitle } from "material-ui/GridList";
 import IconButton from "material-ui/IconButton";
-import ZoomIn from 'material-ui/svg-icons/action/zoom-in'
+import ZoomIn from "material-ui/svg-icons/action/zoom-in";
 import Dialog from "material-ui/Dialog";
 import FlatButton from "material-ui/FlatButton";
 import GridTile from "material-ui/GridList/GridTile";
 
 class ImageResult extends Component {
-    state={
-        open:false,
-        currentImg:""
-    }
+  state = {
+    open: false,
+    currentImg: "",
+  };
 
-handleOpen=(img)=>{
-this.setState({open:true,currentImg:img})
-}
-handleClose=()=>{
-    this.setState({open:false})
-}
+  handleOpen = (img) => {
+    this.setState({ open: true, currentImg: img });
+  };
+  handleClose = () => {
+    this.setState({ open: false });
+  };
 
   render() {
     let imageListContent;
@@ -38,7 +38,7 @@ handleClose=()=>{
                 </span>
               }
               actionIcon={
-                <IconButton>
+                <IconButton onClick={()=>this.handleOpen(img.largeImageURL)}>
                   <ZoomIn color="white" />
                 </IconButton>
               }
@@ -52,23 +52,24 @@ handleClose=()=>{
       imageListContent = null;
     }
 
-    const actions=[
-        <FlatButton label="Close" primary={true} onClick={this.handleClose}/>
-    ]
+    const actions = [
+      <FlatButton label="Close" primary={true} onClick={this.handleClose} />,
+    ];
 
-    return(
-    <div>{imageListContent}
-    <Dialog 
-    actions={actions}
-    modal={false}
-    open={this.state.open}
-    onRequestClose={this.handleClose}
-    >
-      <img src={this.state.currentImg} alt="" style={{width:"100%"}}/>
+    return (
+      <div>
+        {imageListContent}
+        <Dialog
+          actions={actions}
+          modal={false}
+          open={this.state.open}
+          onRequestClose={this.handleClose}
+        >
+          <img src={this.state.currentImg} alt="" style={{ width: "100%" }} />
         </Dialog>
-    </div>
-    )  
-}
+      </div>
+    );
+  }
 }
 
 ImageResult.propTypes = {
