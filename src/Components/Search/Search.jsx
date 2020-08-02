@@ -31,7 +31,7 @@ this.setState({images:[]})
     });
   };
 
-  onAmountChange = (e, index, value) => this.setState({ amount: value });
+  onAmountChange = (value) => this.setState({ amount: value });
 
   render() {
     console.log(this.state.images);
