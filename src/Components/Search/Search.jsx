@@ -38,7 +38,7 @@ this.setState({images:[]})
 
     return (
       <div style={{padding:"30px"}} >
-        <h2 style={{textAlign:"center"}}>Meraki provides you with the latest collection of the highest quality pictures in no time!</h2>
+        <h2 style={{textAlign:"center"}}>Meraki provides you with the latest collection of the highest quality pictures in no time than any other app!</h2>
         <h3 style={{textAlign:"center"}}>This app is developed by <a style={{textDecoration:"none"}} href="https://kevinjacob2001.github.io/">Kevin Jacob</a> using React.js with love!💓</h3>
         <TextField
           name="searchText"
