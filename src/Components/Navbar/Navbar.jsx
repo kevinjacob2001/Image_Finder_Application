@@ -4,7 +4,7 @@ import App from '../../App';
 
 function Navbar(){
     return(
-<AppBar style={{background:"#061238",textAlign:"center"}}  title="Image Finder by Kevin Jacob!"/>
+<AppBar style={{background:"#061238",textAlign:"center"}}  title="Image Finder!📷🔍"/>
     )
 }
 
