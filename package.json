@@ -2,7 +2,9 @@
   "name": "image_finder_application",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://kevinjacob2001.github.io/Image_Finder_Application",
   "dependencies": {
+    "-": "0.0.1",
     "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -12,7 +14,8 @@
     "material-ui": "^0.20.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "save": "^2.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
