@@ -35,11 +35,12 @@ this.setState({images:[]})
   onAmountChange = (e, index, value) => this.setState({ amount: value });
 
   render() {
-    
+
     return (
       <div >
         <TextField
           name="searchText"
+          floatingLabelStyle={{color: "white" }}
           value={this.state.searchText}
           onChange={this.onTextChange}
           floatingLabelText="Search For Images"
@@ -48,13 +49,13 @@ this.setState({images:[]})
         <br />
         <SelectField
           name="amount"
-          
+          floatingLabelStyle={{color: "white" }}
           floatingLabelText="No of images per page:"
           
           value={this.state.amount}
           onChange={this.onAmountChange}
         >
-          <MenuItem value={5} primaryText="5" />
+          <MenuItem value={5}   primaryText="5" />
           <MenuItem value={10} primaryText="10" />
           <MenuItem value={15} primaryText="15" />
           <MenuItem value={30} primaryText="30" />
